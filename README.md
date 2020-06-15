@@ -19,6 +19,7 @@ void rgb() {
   image2.updatePixels();
 }
 ```
+![RGB](https://trello-attachments.s3.amazonaws.com/5ee6e14304b99266b4ddb1f4/803x428/4ce9fd985408eddb50217a074b6e70e3/RGB.png)
 
 ### Luma
 
