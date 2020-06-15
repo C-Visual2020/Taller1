@@ -174,7 +174,7 @@ int resolution = 5;
 
 void setup(){
   frameRate(30);
-  size(640, 360);
+  size(1280, 360);
   font = createFont("Courier", resolution + 3);
   f = createFont("Arial",16,true);
   movie = new Movie(this, "video.mp4");
@@ -186,10 +186,13 @@ void movieEvent(Movie movie) {
 }
 
 void draw(){
+  image(movie,0,0);
   ascii();
+  image(movie,640,0);
   textFont(f,18);
   fill(255);
   text("FPS: " + nf(frameRate, 0, 2), 545, 20);
+  text("FPS: " + nf(frameRate, 0, 2), 1190, 20);
 }
 
 void ascii() {
@@ -199,7 +202,7 @@ void ascii() {
   for (int i = 0; i < movie.width; i+=resolution) {
     for (int j = 0; j < movie.height; j+=resolution) {
       color c = movie.pixels[i + j*movie.width];
-      //c = color((red(c)+green(c)+blue(c))/3.0);
+      c = color((red(c)+green(c)+blue(c))/3.0);
       fill(c);
       text(chars[int(brightness(c)/25.5)], i, j);
     }
