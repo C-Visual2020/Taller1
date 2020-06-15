@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Taller 1
 
 You can use the [editor on GitHub](https://github.com/C-Visual2020/Taller1/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
