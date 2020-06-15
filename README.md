@@ -125,7 +125,8 @@ float[][] Dark = { { 0, 0, 0 },
 
 ## Image To Ascii
 
-```Image To Ascii
+
+```ImageToAscii
 PImage image, image2;
 PFont font;
 char[] chars = {'█','█','▓','▒','░','#','≡','%','$','@','&'};
