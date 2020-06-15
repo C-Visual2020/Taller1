@@ -162,28 +162,6 @@ void ascii() {
 ![Ascii](https://trello-attachments.s3.amazonaws.com/5ee6f7d526fb9e66a4bc5647/803x428/e875339f0fe82a219792d5e76864e035/Ascii.png)
 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
 ### Jekyll Themes
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/C-Visual2020/Taller1/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
