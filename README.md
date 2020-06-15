@@ -1,11 +1,22 @@
-## Taller 1
+# Taller 1
 
-You can use the [editor on GitHub](https://github.com/C-Visual2020/Taller1/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+El siguiente documento es el desarrollo del taller 1 de la materia Computacion Visual, desarrollado por [Luis Fernando Rodriguez](https://github.com/luifrodriguezroj) y [Miguel Angel Gómez](https://github.com/miagomezch).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## GrayScale
 
-### Markdown
+En este proyecto se busco tomar una imagen y mediante un manejo de los pixeles de la imagen se realiza una conversion mediante los formatos _RGB_ y _Luma_
 
+### RGB
+
+```RGB
+
+```
+
+### Luma
+
+```Luma
+
+```
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
