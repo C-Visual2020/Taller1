@@ -160,6 +160,8 @@ void ascii() {
 ```
 
 ![Ascii](https://trello-attachments.s3.amazonaws.com/5ee6f7d526fb9e66a4bc5647/803x428/e875339f0fe82a219792d5e76864e035/Ascii.png)
+
+
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
