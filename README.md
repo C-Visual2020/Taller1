@@ -62,23 +62,49 @@ void conv() {
 ```
 ### Sharpen
 
+```Sharpen
+float[][] Sharpen = { { 0, -1, 0 },
+                     { -1,  5, -1 },
+                     { 0, -1, 0 } };
+
+```
+
 ![Sharpen](https://trello-attachments.s3.amazonaws.com/5ee6f0e9f530155846a83a62/803x428/19b68160883fbfec1b984362fbbe362f/Sharpen.png)
 
 ![SharpenH](https://trello-attachments.s3.amazonaws.com/5ee6f0e9f530155846a83a62/805x429/1d7e5142c95315ee1d99cd7a1d9fe31a/SharpenH.png)
 
 ### Edge
 
+```Edge
+float[][] Edge = { { -1, -1, -1 },
+                   { -1,  8, -1 },
+                   { -1, -1, -1 } };  
+
+```
 ![Edge](https://trello-attachments.s3.amazonaws.com/5ee6f0e9f530155846a83a62/804x428/6cf459e004c19db9b9ab297aed828be3/Edge.png)
 
 ![EdgeH](https://trello-attachments.s3.amazonaws.com/5ee6f0e9f530155846a83a62/803x428/447a56b5357b043ef248f90ffd0ed7d9/EdgeH.png)
 
 ### Box
 
+```Box
+float[][] Box = { { 0.11111, 0.11111, 0.11111 },
+                   { 0.11111, 0.11111, 0.11111 },
+                   { 0.11111, 0.11111, 0.11111 } };  
+
+```
 ![Box](https://trello-attachments.s3.amazonaws.com/5ee6f0e9f530155846a83a62/803x428/3eab0616297765a9b133652090fcde87/Box.png)
 
 ![BoxH](https://trello-attachments.s3.amazonaws.com/5ee6f0e9f530155846a83a62/803x428/d97e101b37e33c0fe8e8e19de7cc5599/BoxH.png)
 
 ### Gauss
+
+```Gauss
+float[][] Gaussian = { { 0.0625, 0.125, 0.0625 },
+                       { 0.125,  0.25, 0.125 },
+                       { 0.0625, 0.125, 0.0625 } };
+
+```
 
 ![Gauss](https://trello-attachments.s3.amazonaws.com/5ee6f0e9f530155846a83a62/803x428/c3f087716e8331c7aa5b6b1b83cf774d/Gauss.png)
 
@@ -86,10 +112,54 @@ void conv() {
 
 ### Dark 
 
+```Dark
+float[][] Dark = { { 0, 0, 0 },
+                   { 0, 0.2, 0 },
+                   { 0, 0, 0 } };
+
+```
+
 ![Dark](https://trello-attachments.s3.amazonaws.com/5ee6f0e9f530155846a83a62/803x428/6e7ee5228356c8fa2a73e1048b8fb29d/Dark.png)
 
 ![DarkH](https://trello-attachments.s3.amazonaws.com/5ee6f0e9f530155846a83a62/803x428/a522127abf18f023554a19edab5cd584/DarkH.png)
 
+## Image To Ascii
+
+```Image To Ascii
+PImage image, image2;
+PFont font;
+char[] chars = {'█','█','▓','▒','░','#','≡','%','$','@','&'};
+int resolution = 4;
+
+void setup(){
+  size(800, 400);
+  font = createFont("Courier", resolution + 3);
+  image = loadImage("image.jpg");
+  image2 = loadImage("image.jpg");
+}
+
+void draw(){
+  image(image, 0, 0);
+  ascii();
+  image(image2, 0, 0);
+}
+
+void ascii() {
+  image.loadPixels();
+  image.filter(GRAY);
+  textFont(font,resolution+3);
+  for (int i = 0; i < image.width; i+=resolution) {
+    for (int j = 0; j < image.height; j+=resolution) {
+      color c = image.get(i, j);
+      fill(c);
+      text(chars[int(brightness(c)/25.5)], i+400, j);
+    }
+  }
+}
+
+```
+
+![Ascii](https://trello-attachments.s3.amazonaws.com/5ee6f7d526fb9e66a4bc5647/803x428/e875339f0fe82a219792d5e76864e035/Ascii.png)
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
