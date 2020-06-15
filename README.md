@@ -2,20 +2,36 @@
 
 El siguiente documento es el desarrollo del taller 1 de la materia Computacion Visual, desarrollado por [Luis Fernando Rodriguez](https://github.com/luifrodriguezroj) y [Miguel Angel Gómez](https://github.com/miagomezch).
 
-## GrayScale
+## Grayscale
 
 En este proyecto se busco tomar una imagen y mediante un manejo de los pixeles de la imagen se realiza una conversion mediante los formatos _RGB_ y _Luma_
 
 ### RGB
 
 ```RGB
-
+void rgb() {
+  image2.loadPixels();
+  for (int i = 0; i < image2.width * image2.height; i++) {
+    color c = image2.pixels[i];
+    float bw=(red(c)+green(c)+blue(c))/3.0;
+    image2.pixels[i] = color(bw);
+  }
+  image2.updatePixels();
+}
 ```
 
 ### Luma
 
 ```Luma
-
+void luma() {
+  image2.loadPixels();
+  for (int i = 0; i < image2.width * image2.height; i++) {
+    color c = image2.pixels[i];
+    float bw = red(c) * 0.299 + green(c) * 0.587 + blue(c) * 0.114;
+    image2.pixels[i] = color(bw);
+  }
+  image2.updatePixels();
+}
 ```
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
