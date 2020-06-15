@@ -210,7 +210,7 @@ void ascii() {
 }
 
 ```
-![Video](https://trello-attachments.s3.amazonaws.com/5ee6e107b924617fcd231a57/5ee6fb41f064b71c09803ac3/d6ed0200a375cfe64be09fe29408d459/Vide.gif)
+[Video](https://trello-attachments.s3.amazonaws.com/5ee6e107b924617fcd231a57/5ee6fb41f064b71c09803ac3/d6ed0200a375cfe64be09fe29408d459/Vide.gif)
 
 ## Camera To Ascii
 
