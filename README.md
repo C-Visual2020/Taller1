@@ -21,6 +21,8 @@ void rgb() {
 ```
 ![RGB](https://trello-attachments.s3.amazonaws.com/5ee6e14304b99266b4ddb1f4/803x428/4ce9fd985408eddb50217a074b6e70e3/RGB.png)
 
+![RGBH](https://trello-attachments.s3.amazonaws.com/5ee6e14304b99266b4ddb1f4/805x428/0e2a9d48f3d0102097e39d4f9bc70ea8/RGBH.png)
+
 ### Luma
 
 ```Luma
@@ -34,6 +36,12 @@ void luma() {
   image2.updatePixels();
 }
 ```
+
+![Luma](https://trello-attachments.s3.amazonaws.com/5ee6e14304b99266b4ddb1f4/803x428/57e557c07435f8cbb9ceb7ad520e6e95/Luma.png)
+
+![LumaH](https://trello-attachments.s3.amazonaws.com/5ee6e14304b99266b4ddb1f4/805x428/76e44ada99828e1ba28e8ddff6ca1aee/LumaH.png)
+
+
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
