@@ -2,9 +2,13 @@
 
 El siguiente documento es el desarrollo del taller 1 de la materia Computacion Visual, desarrollado por [Luis Fernando Rodriguez](https://github.com/luifrodriguezroj) y [Miguel Angel Gómez](https://github.com/miagomezch).
 
+## PROPOSITO
+
+
+
 ## Grayscale
 
-En este proyecto se busco tomar una imagen y mediante un manejo de los pixeles de la imagen se realiza una conversion mediante los formatos _RGB_ y _Luma_
+En este proyecto se busco tomar una imagen y mediante un manejo de los pixeles de la imagen se realiza una conversion mediante los formatos _RGB_ y [_Luma_](https://en.wikipedia.org/wiki/Luma_(video))
 
 ### RGB
 
@@ -47,7 +51,9 @@ void luma() {
 
 ## Convolution Masks
 
-```Luma
+Para este proyecto, se busca tomar una imagen y mediante el manejo de una [matriz de convolucion](https://en.wikipedia.org/wiki/Kernel_(image_processing)) realizar una transformacion a la imagen original.
+
+```Mascara
 void conv() {
   image2.loadPixels();
   for (int x = 0; x < image.width; x++) {
@@ -125,6 +131,8 @@ float[][] Dark = { { 0, 0, 0 },
 
 ## Image To Ascii
 
+Para el siguiente proyecto, se busca tomar una imagen y realizar un proceso de transformacion, de cada uno de los pixeles, con caracteres previamente establecidas.
+
 ```ImageToAscii
 PImage image, image2;
 PFont font;
@@ -163,6 +171,8 @@ void ascii() {
 
 
 ## Video To Ascii
+
+Al igual que el punto anterios, se busca el procesamiento pero esta vez de un video, tomando cada frame y transformandolo en arte ascii
 
 ```VideoToAscii
 import processing.video.*;
@@ -219,6 +229,8 @@ void ascii() {
 
 
 ## Camera To Ascii
+
+Para este punto se busca tomar imagen en vivo y al igual que la transformacion de un video, se busca convertir la imagen en codigo ascii. 
 
 ```CameraToAscii
 import processing.video.*;
