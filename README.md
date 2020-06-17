@@ -2,10 +2,6 @@
 
 El siguiente documento es el desarrollo del taller 1 de la materia Computacion Visual, desarrollado por [Luis Fernando Rodriguez](https://github.com/luifrodriguezroj) y [Miguel Angel Gómez](https://github.com/miagomezch).
 
-## PROPOSITO
-
-
-
 ## Grayscale
 
 En este proyecto se busco tomar una imagen y mediante un manejo de los pixeles de la imagen se realiza una conversion mediante los formatos _RGB_ y [_Luma_](https://en.wikipedia.org/wiki/Luma_(video))
