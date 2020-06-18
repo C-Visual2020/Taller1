@@ -235,10 +235,8 @@ PFont font, f;
 char[] chars = {'█','█','▓','▒','░','#','≡','%','$','@','&'};
 int resolution = 5;
 
-//Step 2. Declare a capture object.
 Capture video;
 
-// Step 5. Read from the camera when a new image is available!
 void captureEvent(Capture video) {
   video.read();
 }
@@ -248,10 +246,9 @@ void setup() {
   size(1280, 480);
   font = createFont("Courier", resolution + 3);
   f = createFont("Arial",16,true);
-  // Step 3. Initialize Capture object.
   video = new Capture(this, 640, 480);
   
-  // Step 4. Start the capturing process.
+
   video.start();
 }
 
