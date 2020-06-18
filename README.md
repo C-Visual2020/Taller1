@@ -51,6 +51,45 @@ void luma() {
 
 ## Hardware
 
+```Shaders
+
+PImage imagen;
+PShader basic, average, luma;
+PShape original_sh, basic_sh, average_sh, luma_sh;
+int counter = 0;
+
+void setup(){
+  size(1200, 400, P2D);
+  imagen = loadImage("image.jpg"); // Load the original image
+  
+  original_sh = createShape(RECT, 0, 0, 400, 400);
+  original_sh.setTexture(imagen);
+  
+  average_sh = createShape(RECT, 400, 0, 400, 400);
+  average_sh.setTexture(imagen);
+  
+  luma_sh = createShape(RECT, 800, 0, 400, 400);
+  luma_sh.setTexture(imagen);
+
+  average = loadShader("average.glsl");
+  luma = loadShader("luma.glsl");
+}
+
+void draw(){
+  resetShader();
+  shape(original_sh);
+  
+  shader(average);
+  shape(average_sh);
+  
+  shader(luma);
+  shape(luma_sh);
+  
+}
+
+```
+
+
 ![Shaders](https://trello-attachments.s3.amazonaws.com/5ee6e107b924617fcd231a57/5ee6fb41f064b71c09803ac3/7f7dde4386bcb32233c1b47d5e93590c/Gray.jpg)
 
 ![ShadersP](https://trello-attachments.s3.amazonaws.com/5ee6e107b924617fcd231a57/5ee6fb41f064b71c09803ac3/2c9636eaf82344ecf48957f4eb3eae60/Histograma.jpg)
@@ -137,6 +176,45 @@ float[][] Dark = { { 0, 0, 0 },
 
 ## Hardware
 
+```ShadersM
+
+PImage imagen;
+PShader kernel;
+PShape frame, original;
+int counter = 0;
+
+final String[] k_variables = {"scalar", "k0", "k1", "k2", "k3", "k4", "k5", "k6", "k7", "k8"};
+                      
+void setup(){
+  size(800, 400, P2D);
+  imagen = loadImage("image.jpg"); // Load the original image
+  
+  original = createShape(RECT, 0, 0, 400, 400);
+  original.setTexture(imagen);
+  
+  frame = createShape(RECT, 400, 0, 400, 400);
+  frame.setTexture(imagen);
+  
+  kernel = loadShader("kernel.glsl");
+}
+
+void draw(){
+  float[] matrix;
+  matrix= k_variables;
+
+  for(int i = 0; i < k_variables.length; i++)
+    kernel.set(k_variables[i], matrix[i]);
+  
+  shader(kernel);
+  shape(frame);
+  
+  resetShader();
+  shape(original);
+  
+}
+
+```
+
 ![Shaders](https://trello-attachments.s3.amazonaws.com/5ee6fb41f064b71c09803ac3/1001x528/5540b6cbb81660417c419eb1ff5aec1b/Mascara.jpg)
 
 ![Shader](https://trello-attachments.s3.amazonaws.com/5ee6fb41f064b71c09803ac3/806x434/00647503e3b17f44c656898a0b48d713/MascaraHisto.jpg)
@@ -182,6 +260,30 @@ void ascii() {
 ![Ascii](https://trello-attachments.s3.amazonaws.com/5ee6f7d526fb9e66a4bc5647/803x428/e875339f0fe82a219792d5e76864e035/Ascii.png)
 
 ## Hardware
+
+```ShadersAscii
+
+PImage image;
+PShader ascii;
+PShape original, frame;
+
+void setup(){
+  size(800, 400, P2D);
+  image = loadImage("image.jpg");
+  
+  ascii = loadShader("ascii.glsl");
+  ascii.set("iResolution", float(width), float(height));
+}
+
+void draw(){
+  resetShader();
+  image(image, 400, 0);
+  filter(GRAY);
+  filter(ascii);
+  image(image, 0, 0);
+}
+
+```
 
 ![AsciiH](https://trello-attachments.s3.amazonaws.com/5ee6fb41f064b71c09803ac3/805x432/b1817f54089dcfed933b5f0da2fd44d5/Ascii.jpg)
 
@@ -248,6 +350,39 @@ void ascii() {
 
 ## Hardware
 
+```ShadersAscii
+
+import processing.video.*;
+
+Movie mov;
+PShader ascii;
+PShape original, frame;
+int image_size = 640;
+
+void setup(){
+  size(1280, 360, P3D);
+  mov = new Movie(this, "video.mp4");
+  mov.play();
+  
+  ascii = loadShader("ascii.glsl");
+  ascii.set("iResolution", float(width), float(height));
+}
+
+void movieEvent(Movie m) {
+  m.read();
+}
+
+void draw(){
+  resetShader();
+  image(mov, 0, 0); 
+  filter(GRAY);
+  filter(ascii);
+  image(mov, image_size, 0);
+  text("FPS: " + nf(frameRate, 0, 2), 545, 20);
+  text("FPS: " + nf(frameRate, 0, 2), 1190, 20);
+}
+
+```
 
 ![Shaders2](https://trello-attachments.s3.amazonaws.com/5ee6e107b924617fcd231a57/5ee6fb41f064b71c09803ac3/612747fca2259a5dda8a0938b7508f72/Video.jpg)
 
