@@ -49,7 +49,7 @@ void luma() {
 
 ![LumaH](https://trello-attachments.s3.amazonaws.com/5ee6e14304b99266b4ddb1f4/805x428/76e44ada99828e1ba28e8ddff6ca1aee/LumaH.png)
 
-## Procesing
+## Hardware
 
 ![Shaders](https://trello-attachments.s3.amazonaws.com/5ee6e107b924617fcd231a57/5ee6fb41f064b71c09803ac3/7f7dde4386bcb32233c1b47d5e93590c/Gray.jpg)
 
@@ -135,9 +135,11 @@ float[][] Dark = { { 0, 0, 0 },
 
 ![DarkH](https://trello-attachments.s3.amazonaws.com/5ee6f0e9f530155846a83a62/803x428/a522127abf18f023554a19edab5cd584/DarkH.png)
 
-## Procesing
+## Hardware
 
 ![Shaders](https://trello-attachments.s3.amazonaws.com/5ee6fb41f064b71c09803ac3/1001x528/5540b6cbb81660417c419eb1ff5aec1b/Mascara.jpg)
+
+![Shader](https://trello-attachments.s3.amazonaws.com/5ee6fb41f064b71c09803ac3/806x434/00647503e3b17f44c656898a0b48d713/MascaraHisto.jpg)
 
 ## Image To Ascii
 
@@ -240,7 +242,7 @@ void ascii() {
 
 ![Video](https://trello-attachments.s3.amazonaws.com/5ee6fb41f064b71c09803ac3/603x235/1cb9199e6bc1106d44ad160583698b62/Video.png)
 
-## Processing
+## Hardware
 
 
 ![Shaders2](https://trello-attachments.s3.amazonaws.com/5ee6e107b924617fcd231a57/5ee6fb41f064b71c09803ac3/612747fca2259a5dda8a0938b7508f72/Video.jpg)
