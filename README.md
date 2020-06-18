@@ -2,6 +2,10 @@
 
 El siguiente documento es el desarrollo del taller 1 de la materia Computacion Visual, desarrollado por [Luis Fernando Rodriguez](https://github.com/luifrodriguezroj) y [Miguel Angel Gómez](https://github.com/miagomezch).
 
+## Motivacion
+
+El proposito de este taller es el aprendisaje de la herramienta procesing, en software y en hardware. Ademas del entendimiento de como se utilizan las mascaras de convolucion aplicadas en una imagen
+
 ## Grayscale
 
 En este proyecto se busco tomar una imagen y mediante un manejo de los pixeles de la imagen se realiza una conversion mediante los formatos _RGB_ y [_Luma_](https://en.wikipedia.org/wiki/Luma_(video))
@@ -44,6 +48,10 @@ void luma() {
 ![Luma](https://trello-attachments.s3.amazonaws.com/5ee6e14304b99266b4ddb1f4/803x428/57e557c07435f8cbb9ceb7ad520e6e95/Luma.png)
 
 ![LumaH](https://trello-attachments.s3.amazonaws.com/5ee6e14304b99266b4ddb1f4/805x428/76e44ada99828e1ba28e8ddff6ca1aee/LumaH.png)
+
+## Procesing
+
+![Shaders](https://trello-attachments.s3.amazonaws.com/5ee6e107b924617fcd231a57/5ee6fb41f064b71c09803ac3/7f7dde4386bcb32233c1b47d5e93590c/Gray.jpg)
 
 ## Convolution Masks
 
@@ -124,6 +132,10 @@ float[][] Dark = { { 0, 0, 0 },
 ![Dark](https://trello-attachments.s3.amazonaws.com/5ee6f0e9f530155846a83a62/803x428/6e7ee5228356c8fa2a73e1048b8fb29d/Dark.png)
 
 ![DarkH](https://trello-attachments.s3.amazonaws.com/5ee6f0e9f530155846a83a62/803x428/a522127abf18f023554a19edab5cd584/DarkH.png)
+
+## Procesing
+
+![Shaders](https://trello-attachments.s3.amazonaws.com/5ee6fb41f064b71c09803ac3/1001x528/5540b6cbb81660417c419eb1ff5aec1b/Mascara.jpg)
 
 ## Image To Ascii
 
@@ -217,11 +229,20 @@ void ascii() {
 
 ```
 
+
 <p align="center">
   
 <a href="https://trello-attachments.s3.amazonaws.com/5ee6e107b924617fcd231a57/5ee6fb41f064b71c09803ac3/d6ed0200a375cfe64be09fe29408d459/Vide.gif">Video</a>
 
 </p>
+
+![Video](https://trello-attachments.s3.amazonaws.com/5ee6fb41f064b71c09803ac3/603x235/1cb9199e6bc1106d44ad160583698b62/Video.png)
+
+## Processing
+
+
+![Shaders2](https://trello-attachments.s3.amazonaws.com/5ee6e107b924617fcd231a57/5ee6fb41f064b71c09803ac3/612747fca2259a5dda8a0938b7508f72/Video.jpg)
+
 
 
 ## Camera To Ascii
