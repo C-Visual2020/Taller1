@@ -53,6 +53,8 @@ void luma() {
 
 ![Shaders](https://trello-attachments.s3.amazonaws.com/5ee6e107b924617fcd231a57/5ee6fb41f064b71c09803ac3/7f7dde4386bcb32233c1b47d5e93590c/Gray.jpg)
 
+![ShadersP](https://trello-attachments.s3.amazonaws.com/5ee6e107b924617fcd231a57/5ee6fb41f064b71c09803ac3/2c9636eaf82344ecf48957f4eb3eae60/Histograma.jpg)
+
 ## Convolution Masks
 
 Para este proyecto, se busca tomar una imagen y mediante el manejo de una [matriz de convolucion](https://en.wikipedia.org/wiki/Kernel_(image_processing)) realizar una transformacion a la imagen original.
