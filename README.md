@@ -181,6 +181,10 @@ void ascii() {
 
 ![Ascii](https://trello-attachments.s3.amazonaws.com/5ee6f7d526fb9e66a4bc5647/803x428/e875339f0fe82a219792d5e76864e035/Ascii.png)
 
+## Hardware
+
+![AsciiH](https://trello-attachments.s3.amazonaws.com/5ee6fb41f064b71c09803ac3/805x432/b1817f54089dcfed933b5f0da2fd44d5/Ascii.jpg)
+
 
 ## Video To Ascii
 
